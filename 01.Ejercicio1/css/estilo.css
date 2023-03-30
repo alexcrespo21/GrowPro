@@ -1,0 +1,103 @@
+body {
+    background-color: aliceblue;
+
+}
+
+.degradado {
+    position: absolute;
+    width: 1366px;
+    height: 70px;
+    left: 0px;
+    top: 0px;
+
+
+    /* Gradient */
+
+    background: linear-gradient(83.33deg, #7733CE 0%, #FF4351 100%);
+
+
+}
+
+.fondo {
+
+    background-image: url(../imagenes/Group1299.png);
+    width: 100%;
+    height: 100%;
+
+}
+
+
+header {}
+
+.logo {
+
+
+    /* Gradient */
+    background: linear-gradient(83.33deg, #7733CE 0%, #FF4351 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 690px;
+
+    position: absolute;
+    width: 349.77px;
+    height: 33.75px;
+    left: 86.27px;
+    top: 16px;
+
+
+
+}
+label{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+}
+
+.form {
+    /* Form */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 30px;
+    gap: 24px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.bEnviar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    gap: 10px;
+
+    width: 121px;
+    height: 60px;
+
+    /* Secondary */
+
+    background: #7A33CC;
+    border-radius: 50px;
+}
