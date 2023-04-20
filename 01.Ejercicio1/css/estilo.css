@@ -1,11 +1,50 @@
-body {
-    background-color: aliceblue;
+/*Seccion general */
+#body {
+    background-color: #f9f9f9;
+    margin: auto;
+
+}
+
+
+.text1 {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 70px;
+    /* or 140% */
+
+    text-align: center;
+
+    /* $white/100 */
+
+    color: #FFFFFF;
+
+
+}
+
+
+
+/*Final seccion genral*/
+
+/*Seccion Cabecera*/
+.fondo {
+
+    background-image: url(../imagenes/unsplash_xarhNpLSHTk.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../imagenes/unsplash_xarhNpLSHTk.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
 }
 
 .degradado {
-    position: absolute;
-    width: 1366px;
+
     height: 70px;
     left: 0px;
     top: 0px;
@@ -18,16 +57,15 @@ body {
 
 }
 
-.fondo {
+.aus {
 
-    background-image: url(../imagenes/Group1299.png);
-    width: 100%;
-    height: 100%;
+   
 
+    /* Primary */
+
+    background: #FF5766;
+    border-radius: 50px;
 }
-
-
-header {}
 
 .logo {
 
@@ -49,55 +87,703 @@ header {}
 
 
 }
-label{
+
+/* Final Seccion Cabecera*/
+
+
+
+
+/* Formulario*/
+#text {
+    padding-right: 50px;
+}
+
+.formulario {
+    margin-top: 150px;
+    
+}
+
+
+
+#textForm {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+
+label {
     font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .form {
-    /* Form */
 
-
-    /* Auto layout */
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+   
     padding: 40px 30px;
     gap: 24px;
+
+    /**width: 557px;
+    height: 608px;*/
+
+
+    margin-top: -150px;
+    
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: #FF4351;
+
+    filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.35));
+}
+.form2 {
+
+   
+    padding: 40px 30px;
+    gap: 24px;
+
+    /**width: 557px;
+    height: 608px;*/
+
+
+    margin-top: -150px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: #FF4351;
+
+    filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.35));
+}
+
+.bEnviar {
+    width: 150px;
+    height: 21px;
+    margin-top: 30px;
 
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
+    /* or 125% */
 
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    left: 0px;
-    top: 0px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 
-    background: #FFFFFF;
-    border-radius: 20px;
-}
+    /* Secundary */
 
-.bEnviar {
+    color: #ffffff;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    border: 0;
+
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 20px 30px;
-    gap: 10px;
 
-    width: 121px;
-    height: 60px;
 
-    /* Secondary */
+
+
+    /* $white/100 */
 
     background: #7A33CC;
-    border-radius: 50px;
+    border-radius: 50.1283px;
+
+
+}
+
+.botonEnviarDiv {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.botonEnviarDiv p {
+    margin-bottom: 0;
+
+}
+
+
+.botonInfoDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.bInfo {
+    width: 150px;
+    height: 21px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    /* Secundary */
+
+    color: #7A33CC;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    border: 0;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+
+
+
+
+    /* $white/100 */
+
+    background: #FFFFFF;
+    border-radius: 50.1283px;
+}
+
+.bInfo p {
+    margin-bottom: 0;
+}
+
+
+.cuatro {
+
+    width: 103.54px;
+    height: 32px;
+    left: 140.46px;
+    top: 883px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    /* or 117% */
+
+    display: flex;
+    align-items: center;
+
+    /* Secundary */
+
+    color: #7A33CC;
+}
+
+
+.mil {
+
+    width: 142px;
+    height: 32px;
+    left: 327px;
+    top: 885px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    /* or 117% */
+
+    display: flex;
+    align-items: center;
+
+    /* Secundary */
+
+    color: #7A33CC;
+
+}
+
+
+/*FIN Formulario*/
+
+
+/*Seccion tarjetas*/
+
+
+
+.tarjeta {
+    
+    padding: 30px 45px;
+    margin: auto;
+    margin-top: 30px;
+   
+   
+
+    /* white */
+
+    background: #FFFFFF;
+    /* Shadow medium */
+
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
+    /* Inside auto layout */
+
+    
+}
+
+#primeraFila {
+    padding-bottom: 50px;
+}
+
+#primeraEtiqueta {
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 45px;
+    gap: 16px;
+
+    width: 520px;
+    height: 340px;
+
+    /* white */
+
+    background: #FFFFFF;
+    /* Shadow medium */
+
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding-right: 80px;
+    margin-right: 50px;
+}
+
+#segundaEtiqueta {
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 45px;
+    gap: 16px;
+
+    width: 520px;
+    height: 340px;
+
+    /* white */
+
+    background: #FFFFFF;
+    /* Shadow medium */
+
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+#terceraEtiqueta {
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 45px;
+    gap: 16px;
+
+    width: 520px;
+    height: 340px;
+
+    /* white */
+
+    background: #FFFFFF;
+    /* Shadow medium */
+
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding-right: 80px;
+    margin-right: 50px;
+}
+
+#cuartaEtiqueta {
+    /* Auto layout */
+
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 45px;
+    gap: 16px;
+
+    width: 520px;
+    height: 340px;
+
+    /* white */
+
+    background: #FFFFFF;
+    /* Shadow medium */
+
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.diferente {
+    
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 56px;
+    /* or 133% */
+
+    text-align: center;
+
+    /* Black */
+
+    color: #2F343D;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.pNegrita {
+    font-weight: bold;
+}
+
+#pNegritaBajo {
+    width: 1118px;
+    height: 49px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 56px;
+    /* or 133% */
+
+    text-align: center;
+
+    /* dark */
+
+    color: #2F343D;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+#pNormalBajo {
+    width: 914px;
+    height: 87px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    /* or 160% */
+
+    text-align: center;
+
+    /* dark */
+
+    color: #2F343D;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.tituloBajo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.penultimoTitulo {
+
+    width: 70%;
+
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 56px;
+    /* or 133% */
+
+
+    /* dark */
+
+    color: #2F343D;
+
+}
+
+.fotoVancuver {
+
+   
+ 
+    border-radius: 20px;
+}
+
+#textoFotoVan {
+  
+    
+
+    max-width: 600px;
+    margin-left: 50px;
+    margin-top: -150px;
+
+    
+    
+
+
+    background: #FFFFFF;
+    /* shadow small */
+
+    box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.textoAinara {
+
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    /* identical to box height, or 136% */
+
+
+    /* dark */
+
+    color: #2F343D;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+.textoAustralia {
+
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+
+    /* dark */
+
+    color: #2F343D;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.form2 {
+   
+    padding: 40px 30px;
+    gap: 24px;
+
+    /**width: 557px;
+    height: 608px;*/
+
+
+
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: #FF4351;
+
+    filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.35));
+
+}
+
+.final {
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+
+}
+
+#textFinal {
+    padding-top: 60px;
+    padding-right: 50px;
+    padding-left: 60px;
+}
+
+
+
+#tituloFinal {
+   
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 56px;
+    /* or 133% */
+
+
+    /* Black */
+
+    color: #2F343D;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.tituloBajo2 {
+    padding-top: 120px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.piePagina {
+    box-sizing: border-box;
+
+    padding-top: 20px;
+    width: 100%;
+    
+    
+    
+
+    background: rgba(217, 217, 217, 0.3);
+    /* Grey-medium */
+
+    border: 1px solid #D9D9D9;
+}
+
+#ultimoBoton {
+    padding-bottom: 20px;
+}
+
+
+
+@media (max-width: 800px) {
+    #text {
+       
+        font-size: 30px;
+    }
+
+    #form {
+        margin-top: 40px;
+        padding: 24px;
+        width: 319px;
+    }
+
+    .primerParrafo {
+        width: 320px;
+        height: 250px;
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 200px;
+    }
+
+    .degradado {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        background-color: transparent;
+
+        width: 0px;
+        height: 0px;
+    }
+
+    .imagenLogo {
+        margin-left: -60px;
+        padding-top: 40px;
+
+    }
+    .fotoVancuver{
+       
+        height: 231px;
+        
+        background: url(../imagenes/Experiencia-en-Vancouver\ 1.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+    }
+    #quitarFinal{
+        display: none;
+    }
+    
+
+
 }

@@ -7,44 +7,52 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen'
       href='css/estilo.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous">
     <script src='main.js'></script>
   </head>
-  <body>
+  <body id="body">
     <header>
       <div class="degradado">
         <div class="logo">
-          <img src="imagenes/logo - white.png">
+          <img src="imagenes/logo - white.png" class="imagenLogo">
         </div>
       </div>
-      <br>
-
       <div class="fondo">
         <div class="grupoBoton">
           <div class="text1">
             <p>
-              Las mejores experiencias para estudiar y trabajar en Australia
+              Las mejores experiencias para estudiar y trabajar <span
+                class="aus">en Australia</span>
             </p>
+
+            <div class="botonInfoDiv">
+              <button class="bInfo"><p>Quiero mas info</p></button>
+            </div>
+
           </div>
         </div>
       </div>
     </header>
 
 
-    <div className="row" class="incio">
+    <div class="row formulario p-5">
 
-      <div className="col-6" class="text">
-        <div className="row">
-          <div className="col">
+      <div class="col-lg-6 col-sm-12 order-lg-1 order-1 text" id="text">
+        <div class="row">
+          <div class="col-6 ">
             <h2>
               Lorem Ipsum is simply dummy text of the printing
             </h2>
-
-          </div>
-        </div>
-
-        <div className="row">
-          <div className="col">
-            <p>
+            <p class="primerParrafo">
               Lorem Ipsum is simply dummy text of the printing and
               typesetting industry. Lorem Ipsum has been the industry's
               standard dummy text ever since the 1500s, when an unknown
@@ -53,111 +61,126 @@
             </p>
 
           </div>
-
         </div>
+
+
         <hr>
-        <div className="row">
-          <div className="col-6">
-            <p> 4.9</p>
+        <div class="row">
+          <div class="col-6">
+            <p class="cuatro"> 4.9</p>
+            <img src="imagenes/Vector.png">
+            <img src="imagenes/Vector.png">
+            <img src="imagenes/Vector.png">
+            <img src="imagenes/Vector.png">
+            <img src="imagenes/Vector.png">
+            <p>Opiniones</p>
+            <p>estudiantes</p>
 
           </div>
-          <div className="col-6">
-            <p>
+          <div class="col-6">
+            <p class="mil">
               15000
             </p>
-            
+            <p>
+              Estudaintes ya<br> han vivido la <br> experiencia
+            </p>
+
           </div>
         </div>
       </div>
 
-      <div className="col-6" class="form">
-        <div class="row" class="cajitasForm">
-          <div className="row">
+      <div class="col-6 order-lg-2 order-2">
+        <div class="form" id="form">
+          <div class="row cajitasForm" id="textForm">
 
-            <div className="col-6">
+            <div class="col-6 p-2">
               <div>
-                <label form="nombre" className="nombreForm">Nombre</label>
+                <label form="nombre" class="nombreForm">Nombre</label>
               </div>
               <div>
-                <input type="text" name="caja1" id="nombreForm">
-              </div>
-            </div>
-
-            <div className="col-6">
-              <div>
-                <label form="apellidos" className="nombreForm">Apellidos</label>
-              </div>
-              <div><input type="text" name="caja2" id="apellidosForm"></div>
-            </div>
-          </div>
-
-          <div className="row">
-            <div className="col">
-              <div>
-                <label form="Correo" className="nombreForm">Correo</label>
-              </div>
-              <div><input type="text" name="caja3" id="correoForm"></div>
-            </div>
-          </div>
-
-          <div className="row">
-
-            <div className="col-6">
-              <div>
-                <label form="pais" className="paisForm">Numero de telefono</label>
-              </div>
-              <div>
-                <input type="text" name="caja4" id="paisForm">
+                <input type="text" name="caja1" class="form-control"
+                  id="nombreForm">
               </div>
             </div>
 
-            <div className="col-6">
+            <div class="col-6 p-2">
               <div>
-                <label form="telefono" className="numForm"></label>
+                <label form="apellidos" class="nombreForm">Apellidos</label>
               </div>
-              <div><input type="text" name="caja5" id="numForm"></div>
-            </div>
-          </div>
-
-          <div className="row">
-
-            <div className="col-6">
-              <div>
-                <label form="nacionalidad" className="nacionalidaForm">Nacionalidad</label>
-              </div>
-              <div>
-                <input type="text" name="caja6" id="nacionalidadForm">
-              </div>
+              <div><input type="text" name="caja2" class="form-control"
+                  id="apellidosForm"></div>
             </div>
 
-            <div className="col-6">
+
+
+            <div class="col-12 p-2">
               <div>
-                <label form="estudios" className="estudiosForm">¿Que quieres
+                <label form="Correo" class="nombreForm">Correo</label>
+              </div>
+              <div><input type="text" name="caja3" class="form-control"
+                  id="correoForm"></div>
+            </div>
+
+
+
+
+            <div class="col-6 p-2">
+              <div>
+                <label form="pais" class="nombreForm">Numero de telefono</label>
+              </div>
+              <div>
+                <input type="text" name="caja4" class="form-control"
+                  id="paisForm">
+              </div>
+            </div>
+
+            <div class="col-6 p-2">
+              <div>
+                <label form="telefono" class="nombreForm"></label>
+              </div>
+              <div><input type="text" name="caja5" class="form-control"
+                  id="numForm"></div>
+            </div>
+
+
+
+
+            <div class="col-6 p-2">
+              <div>
+                <label form="nacionalidad" class="nombreForm">Nacionalidad</label>
+              </div>
+              <div>
+                <input type="text" name="caja6" class="form-control"
+                  id="nacionalidadForm">
+              </div>
+            </div>
+
+            <div class="col-6 p-2">
+              <div>
+                <label form="estudios" class="nombreForm">¿Que quieres
                   estudiar?</label>
               </div>
-              <div><input type="text" name="caja7" id="estudiosForm"></div>
+              <div><input type="text" name="caja7" class="form-control"
+                  id="estudiosForm"></div>
+            </div>
+
+
+            <div class="col-12 p-2">
+              <input type="checkbox" name="info" id="check">
+              <label for="info" class="nombreForm"> he leido y acepto el aviso
+                legal y la politica de
+                privacidad</label>
+            </div>
+
+            <div class="col-12 botonEnviarDiv p-2">
+              <button class="bEnviar">
+                <p>enviar</p>
+              </button>
+
             </div>
           </div>
 
-          <div>
-            <input type="checkbox" name="info" id="check">
-            <label for="info"> he leido y acepto el aviso legal y la politica de
-              privacidad</label>
-          </div>
-
-          <div>
-            <button class="bEnviar" set>
-              enviar
-            </button>
-
-          </div>
-
-
-
-
-
         </div>
-
       </div>
 
     </div>
@@ -165,6 +188,296 @@
 
 
 
+
+    <div class="row tarjetas p-5">
+
+      <div class="col-12">
+        <div class="diferente">
+          <p>¿Qué hace diferente GrowPro? </p>
+          <p class="pNegrita"> Te acompaña en destino, pero de verdad</p>
+
+        </div>
+      </div>
+
+      <div class="col-5 py-2 m-auto ">
+        <div class="tarjeta ">
+          <div><img src="imagenes/Group.png"></div>
+          <p class="pNegrita">Kick-off Meeting</p>
+          <p>Es una sesión online que se realiza antes de tu viaje, en la que
+            conocerás a tu equipo en destino y a otros estudiantes. ¡Aterrizarás
+            con la seguridad de conocer a quién te espera en destino.</p>
+        </div>
+
+      </div>
+      <div class="col-5 py-2 m-auto">
+        <div class="tarjeta ">
+          <div><img src="imagenes/Group.png"></div>
+          <p class="pNegrita">Kick-off Meeting</p>
+          <p>Es una sesión online que se realiza antes de tu viaje, en la que
+            conocerás a tu equipo en destino y a otros estudiantes. ¡Aterrizarás
+            con la seguridad de conocer a quién te espera en destino.</p>
+        </div>
+
+      </div>
+      <div class="col-5 py-2 m-auto">
+        <div class="tarjeta ">
+          <div><img src="imagenes/Group.png"></div>
+          <p class="pNegrita">Kick-off Meeting</p>
+          <p>Es una sesión online que se realiza antes de tu viaje, en la que
+            conocerás a tu equipo en destino y a otros estudiantes. ¡Aterrizarás
+            con la seguridad de conocer a quién te espera en destino.</p>
+        </div>
+      </div>
+
+      <div class="col-5 py-2 m-auto">
+        <div class="tarjeta">
+          <div><img src="imagenes/Group.png"></div>
+          <p class="pNegrita">Kick-off Meeting</p>
+          <p>Es una sesión online que se realiza antes de tu viaje, en la que
+            conocerás a tu equipo en destino y a otros estudiantes. ¡Aterrizarás
+            con la seguridad de conocer a quién te espera en destino.</p>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+    <div class="row cta">
+      <div class="col-12 tituloBajo">
+
+        <p id="pNegritaBajo"> ¡Y mucho más!</p>
+        <p id="pNormalBajo">Dinos en qué quieres formarte y te ayudamos a dar un
+          salto en tu carrera. Lorem Ipsum es simplemente el texto de relleno de
+          las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de
+          relleno estándar de las industrias desde el año 1500 .</p>
+
+      </div>
+
+      <div class="col-12 botonEnviarDiv">
+        <button class="bEnviar"><p>Quiero mas info</p></button>
+      </div>
+
+    </div>
+
+
+    <div class="row testimonios p-5">
+
+      <div class=" col-6 penultimoTitulo">
+        <p>Descubre la experienca<br> de Olga <span class="pNegrita">en Canadá</span></p>
+      </div>
+
+      <div class=" col-12 fotoVancuver">
+        <img src="imagenes/Experiencia-en-Vancouver 1.png">
+
+      </div>
+
+      <div class="col-6 textoFotoVancuver p-3" id="textoFotoVan">
+
+        <p>““Me mudé a Canadá con la incertidumbre de si encontraría o no un
+          trabajo que me llenara, con unos ahorros limitados pero mucha energía.
+          Ahora, vivo feliz en una de las ciudades más increíbles del planeta.”</p>
+        <div class="row">
+          <div class="col-2">
+            <img src="imagenes/Ellipse 26.png">
+          </div>
+          <div class="col">
+            <div class="row textoAinara">
+              <p>Annaira, en Australia</p>
+            </div>
+            <div class="row textoAustralia">
+              <p>Growers en Australia</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="botonEnviarDiv">
+              <button class="bEnviar"><p>Quiero mas info</p></button>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="row formulario p-5" id="quitarFinal">
+      <div class="col-6 ">
+
+        <div class="row cajitasForm">
+
+          <div class="form" id="form">
+            <div class="row cajitasForm" id="textForm">
+  
+              <div class="col-6 p-2">
+                <div>
+                  <label form="nombre" class="nombreForm">Nombre</label>
+                </div>
+                <div>
+                  <input type="text" name="caja1" class="form-control"
+                    id="nombreForm">
+                </div>
+              </div>
+  
+              <div class="col-6 p-2">
+                <div>
+                  <label form="apellidos" class="nombreForm">Apellidos</label>
+                </div>
+                <div><input type="text" name="caja2" class="form-control"
+                    id="apellidosForm"></div>
+              </div>
+  
+  
+  
+              <div class="col-12 p-2">
+                <div>
+                  <label form="Correo" class="nombreForm">Correo</label>
+                </div>
+                <div><input type="text" name="caja3" class="form-control"
+                    id="correoForm"></div>
+              </div>
+  
+  
+  
+  
+              <div class="col-6 p-2">
+                <div>
+                  <label form="pais" class="nombreForm">Numero de telefono</label>
+                </div>
+                <div>
+                  <input type="text" name="caja4" class="form-control"
+                    id="paisForm">
+                </div>
+              </div>
+  
+              <div class="col-6 p-2">
+                <div>
+                  <label form="telefono" class="nombreForm"></label>
+                </div>
+                <div><input type="text" name="caja5" class="form-control"
+                    id="numForm"></div>
+              </div>
+  
+  
+  
+  
+              <div class="col-6 p-2">
+                <div>
+                  <label form="nacionalidad" class="nombreForm">Nacionalidad</label>
+                </div>
+                <div>
+                  <input type="text" name="caja6" class="form-control"
+                    id="nacionalidadForm">
+                </div>
+              </div>
+  
+              <div class="col-6 p-2">
+                <div>
+                  <label form="estudios" class="nombreForm">¿Que quieres
+                    estudiar?</label>
+                </div>
+                <div><input type="text" name="caja7" class="form-control"
+                    id="estudiosForm"></div>
+              </div>
+  
+  
+              <div class="col-12 p-2">
+                <input type="checkbox" name="info" id="check">
+                <label for="info" class="nombreForm"> he leido y acepto el aviso
+                  legal y la politica de
+                  privacidad</label>
+              </div>
+  
+              <div class="col-12 botonEnviarDiv p-2">
+                <button class="bEnviar">
+                  <p>enviar</p>
+                </button>
+  
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-6 textFinal" id="textFinal">
+        <div class="row">
+          <div class="col">
+            <h2 id="tituloFinal">
+              Lorem Ipsum es simplemente el texto de relleno de <span
+                class="pNegrita">las imprentas </span>
+            </h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <p><img src="imagenes/tick.png">
+              Lorem Ipsum es simplemente el texto de relleno de <br>las
+              imprentas.
+            </p>
+            <p><img src="imagenes/tick.png">
+              Lorem Ipsum es simplemente el texto de relleno de<br> las
+              imprentas.
+            </p>
+            <p><img src="imagenes/tick.png">
+              Lorem Ipsum es simplemente el texto de relleno de<br> las
+              imprentas.
+            </p>
+            <p><img src="imagenes/tick.png">
+              Lorem Ipsum es simplemente el texto de relleno de<br> las
+              imprentas.
+            </p>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row cta">
+      <div class=" col-12 tituloBajo2">
+
+        <p id="pNegritaBajo">¿Te unes a nuestra comunidad grower?</p>
+        <p id="pNormalBajo">Lorem Ipsum is simply dummy text of the printing and
+          typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy
+          text ever since the 1500s,when an unknown printer took a galley of
+          type
+          and scrambled it to make a type pecimen book.</p>
+
+      </div>
+
+
+      <div class="col-12 botonEnviarDiv" id="ultimoBoton">
+        <button class="bEnviar"><p>Quiero mas info</p></button>
+      </div>
+    </div>
+
+
+    <footer class="piePagina">
+      <div class="row w-100 text-center">
+        <div class="col-6">
+          <p>
+            ©2021 GrowPro • Todos los derechos reservados
+          </p>
+
+        </div>
+        <div class="col-6">
+          <p>
+            Aviso legal | Política de cookies | Política de privacidad
+          </p>
+
+        </div>
+
+      </div>
+
+    </footer>
 
 
 
